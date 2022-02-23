@@ -32,3 +32,9 @@
 
 
 ![chart (1)](https://user-images.githubusercontent.com/58403278/155422892-e5d6e7bc-e0dd-4db6-b710-0e99d8e80e30.png)
+
+
+ВЫВОД:
+
+![2022-02-24 (10)_LI](https://user-images.githubusercontent.com/58403278/155424687-02458715-ba61-469e-82cb-b8893dd33c60.jpg)
+
