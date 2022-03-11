@@ -9,7 +9,7 @@ string Slova = "снимать локальный дыхание некоторые смутный отрезать встреча уди
 string MasivBookv[33] = { "a","б","в","г","д","е","Є","ж","з","и","й","к","л","м","н","о","п","р","с","т","у","ф","х","ц","ч","ш","щ","ъ","ы","ь","э","ю","€" };
 string SlovaMasiv[MAX_PATH];
 int VesSlovaMasiv = 0;
-
+bool bool_potok[MAX_PATH];//ƒл€ переклички потоков 
 
 void RazbitSlova()
 {
@@ -20,7 +20,7 @@ void RazbitSlova()
 	VesSlovaMasiv--;//делаем -1 дл€ корректности массива
 }
 
-bool bool_potok[MAX_PATH];//ƒл€ переклички потоков
+
 void DobavitBookvy(int Value_slova, int Value_bukva)
 {
 	bool_potok[Value_slova] = false;//заставл€ем обнул€тьс€
@@ -53,7 +53,7 @@ void main()
 	{
 		while (bool_potok[x] == true)//цикл, который убеждаетс€ что поток завершил свою работу и не даст коду забежать дальше раньше времени
 		{
-			Sleep(1);//задержка что-бы успевать и оптимизировать 
+			Sleep(1);//задержка что-бы успевать и оптимизировать, без нее не коректнный вывод )
 			Vivod = Vivod + SlovaMasiv[x] + " ";//клейка слов
 			bool_potok[x] = false;//сделал дл€ удобства отслеживание через отладчик, мог и break запихнуть.
 		}
